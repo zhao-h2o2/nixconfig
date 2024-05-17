@@ -25,6 +25,7 @@ with lib.plusultra;
 
     cli-apps = {
       neovim = enabled;
+      yazi = enabled;
     };
   };
 
@@ -40,7 +41,6 @@ with lib.plusultra;
     alacritty
     neovim
     gcc
-    yazi
     git
     gitflow
     gitui
