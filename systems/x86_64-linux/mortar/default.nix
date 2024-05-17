@@ -22,6 +22,10 @@ with lib.plusultra;
       networking = enabled;
       storage = enabled;
     };
+
+    cli-apps = {
+      neovim = enabled;
+    };
   };
 
   # Enable the X11 windowing system.
