@@ -37,11 +37,5 @@ in
         monthly = mkDefault 2;
       };
     };
-
-    plusultra = {
-      tools = {
-        icehouse = enabled;
-      };
-    };
   };
 }
