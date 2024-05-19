@@ -33,6 +33,14 @@ with lib.plusultra;
       terminal = {
         kitty = enabled;
       };
+      browser = {
+        vivaldi = {
+          enable = true;
+          default = true;
+        };
+        firefox = enabled;
+        chrome = enabled;
+      };
     };
   };
 
@@ -43,8 +51,6 @@ with lib.plusultra;
   services.xserver.desktopManager.plasma5.enable = true;
   
   environment.systemPackages = with pkgs; [
-    firefox
-    google-chrome
     neovim
     gcc
     clash-meta
