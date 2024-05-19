@@ -28,6 +28,12 @@ with lib.plusultra;
       neovim = enabled;
       yazi = enabled;
     };
+
+    desktop = {
+      terminal = {
+        foot = enabled;
+      };
+    };
   };
 
   # Enable the X11 windowing system.
@@ -39,7 +45,6 @@ with lib.plusultra;
   environment.systemPackages = with pkgs; [
     firefox
     google-chrome
-    alacritty
     neovim
     gcc
     clash-meta
