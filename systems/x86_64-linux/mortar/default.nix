@@ -45,7 +45,7 @@ with lib.plusultra;
         rime = enabled;
       };
       filemanager = {
-        pcmanfm = enabled;
+        nautilus = enabled;
       };
       gtk = enabled;
     };
