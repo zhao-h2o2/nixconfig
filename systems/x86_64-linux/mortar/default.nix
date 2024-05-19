@@ -47,6 +47,7 @@ with lib.plusultra;
       filemanager = {
         pcmanfm = enabled;
       };
+      gtk = enabled;
     };
   };
 
