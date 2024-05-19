@@ -24,6 +24,7 @@ with lib.plusultra;
     };
 
     cli-apps = {
+      git = enabled;
       neovim = enabled;
       yazi = enabled;
     };
@@ -41,10 +42,6 @@ with lib.plusultra;
     alacritty
     neovim
     gcc
-    git
-    gitflow
-    gitui
-    lazygit
     clash-meta
     wget
     curl
