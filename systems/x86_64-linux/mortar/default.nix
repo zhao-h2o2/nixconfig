@@ -31,7 +31,7 @@ with lib.plusultra;
 
     desktop = {
       terminal = {
-        foot = enabled;
+        kitty = enabled;
       };
     };
   };
