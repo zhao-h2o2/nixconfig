@@ -41,6 +41,9 @@ with lib.plusultra;
         firefox = enabled;
         chrome = enabled;
       };
+      inputmethod = {
+        rime = enabled;
+      };
     };
   };
 

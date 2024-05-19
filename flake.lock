@@ -89,10 +89,27 @@
         "type": "github"
       }
     },
+    "rime-ice": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1715853456,
+        "narHash": "sha256-JbDETlkNAq9SqJ2FHO7RT0AylLUiNhktpvZVXzVQ/gw=",
+        "owner": "iDvel",
+        "repo": "rime-ice",
+        "rev": "c29d07abe402ea3d79d3357dc458bdb78084f9b5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "iDvel",
+        "repo": "rime-ice",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
+        "rime-ice": "rime-ice",
         "snowfall-lib": "snowfall-lib",
         "unstable": "unstable"
       }
