@@ -44,6 +44,9 @@ with lib.plusultra;
       inputmethod = {
         rime = enabled;
       };
+      filemanager = {
+        pcmanfm = enabled;
+      };
     };
   };
 
