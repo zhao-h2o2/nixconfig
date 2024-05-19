@@ -17,7 +17,7 @@ in
 
     plusultra.home.configFile = {
       "kitty/kitty.conf".source = ./kitty.conf;
-      "kitty/scheme.conf".source = ./tokyonight.conf;
+      "kitty/scheme.conf".source = ./nord.conf;
     };
   };
 }
