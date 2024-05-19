@@ -22,6 +22,12 @@ with lib.plusultra;
       networking = enabled;
       storage = enabled;
     };
+
+    cli-apps = {
+      git = enabled;
+      neovim = enabled;
+      yazi = enabled;
+    };
   };
 
   # Enable the X11 windowing system.
@@ -36,11 +42,6 @@ with lib.plusultra;
     alacritty
     neovim
     gcc
-    yazi
-    git
-    gitflow
-    gitui
-    lazygit
     clash-meta
     wget
     curl

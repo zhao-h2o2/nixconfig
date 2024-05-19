@@ -33,6 +33,8 @@ in {
     home-manager = {
       useUserPackages = true;
       useGlobalPkgs = true;
+      users.${config.plusultra.user.name} =
+        mkAliasDefinitions options.plusultra.home.extraOptions;
     };
   };
 }
