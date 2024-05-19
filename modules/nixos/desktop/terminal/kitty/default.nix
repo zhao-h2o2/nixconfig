@@ -15,6 +15,9 @@ in
       pkg = pkgs.kitty;
     };
 
-    # plusultra.home.configFile."kitty/foot.ini".source = ./foot.ini;
+    plusultra.home.configFile = {
+      "kitty/kitty.conf".source = ./kitty.conf;
+      "kitty/scheme.conf".source = ./tokyonight.conf;
+    };
   };
 }
