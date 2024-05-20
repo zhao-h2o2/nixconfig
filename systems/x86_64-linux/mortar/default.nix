@@ -7,6 +7,7 @@ with lib.plusultra;
 
   plusultra = {
     nix = enabled;
+    nix-cache = enabled;
 
     system = {
       boot = enabled;

@@ -12,7 +12,7 @@ in
 
   config = mkIf cfg.enable {
     plusultra.nix.extra-substituters = {
-      "https://tuna.tsinghua.edu.cn/nix-channels/store".key = "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=";
+      "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store".key = "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=";
     };
   };
 }
