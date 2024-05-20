@@ -35,7 +35,11 @@ in
     environment.shellAliases = {
       proxychains = "proxychains4";
     };
-
+    plusultra.home.extraOptions = {
+      programs.zsh.shellAliases = {
+        pc = "proxychains -q";
+      };
+    };
 
     environment.systemPackages = with pkgs; [
       clash-meta
