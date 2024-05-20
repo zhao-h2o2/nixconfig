@@ -7,6 +7,7 @@ with lib.plusultra;
 
   plusultra = {
     nix = enabled;
+    nix-cache = enabled;
 
     system = {
       boot = enabled;
@@ -26,6 +27,7 @@ with lib.plusultra;
     cli-apps = {
       git = enabled;
       neovim = enabled;
+      proxy = enabled;
       yazi = enabled;
     };
 

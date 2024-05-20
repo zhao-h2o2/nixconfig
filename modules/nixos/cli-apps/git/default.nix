@@ -30,6 +30,8 @@ in
             safe = {
               # directory = "${config.users.users.${user.name}.home}/work/config";
             };
+            http.proxy = "socks5h://localhost:7891";
+            https.proxy = "socks5h://localhost:7891";
           };
         };
 
