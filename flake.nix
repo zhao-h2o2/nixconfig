@@ -15,6 +15,12 @@
     # Snowfall Lib
     snowfall-lib.url = "github:snowfallorg/lib/dev";
     snowfall-lib.inputs.nixpkgs.follows = "nixpkgs";
+
+    # rime-ice
+    rime-ice = {
+      url = "github:iDvel/rime-ice";
+      flake = false;
+    };
   };
 
   outputs = inputs: let

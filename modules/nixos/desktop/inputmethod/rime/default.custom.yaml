@@ -1,0 +1,12 @@
+patch:
+  "ascii_composer/good_old_caps_lock": false
+  "ascii_composer/switch_key":
+    Caps_Lock: commit_code
+    Control_L: noop # 不做任何操作
+    Control_R: noop # 不做任何操作
+    Shift_L: noop
+    Shift_R: inline_ascii
+  "menu/page_size": 9
+  schema_list:
+  - schema: double_pinyin_flypy    # 小鹤双拼
+  - schema: rime_ice               # 雾凇拼音（全拼）
