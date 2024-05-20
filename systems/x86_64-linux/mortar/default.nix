@@ -24,6 +24,10 @@ with lib.plusultra;
       storage = enabled;
     };
 
+    services = {
+      syncthing = enabled;
+    };
+
     cli-apps = {
       git = enabled;
       neovim = enabled;
