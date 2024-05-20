@@ -26,6 +26,7 @@ with lib.plusultra;
     cli-apps = {
       git = enabled;
       neovim = enabled;
+      proxy = enabled;
       yazi = enabled;
     };
 
