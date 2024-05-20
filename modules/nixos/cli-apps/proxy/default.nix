@@ -11,11 +11,6 @@ in
   };
 
   config = mkIf cfg.enable {
-    environment.systemPackages = with pkgs; [
-      clash-meta
-      proxychains-ng
-    ];
-
     programs.proxychains = {
       enable = true;
       quietMode = true;
@@ -36,6 +31,15 @@ in
           };
       };
     };
+
+    environment.shellAliases = {
+      proxychains = "proxychains4";
+    };
+
+
+    environment.systemPackages = with pkgs; [
+      clash-meta
+    ];
 
     systemd.services.clash = {
       enable = true;
