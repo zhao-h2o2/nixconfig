@@ -27,6 +27,10 @@ in {
         noto-fonts
         noto-fonts-cjk-sans
         noto-fonts-cjk-serif
+        source-han-sans
+        source-han-serif
+        wqy_microhei
+        wqy_zenhei
         noto-fonts-emoji
         (nerdfonts.override {fonts = [ "Hack" "JetBrainsMono" ];})
       ]
