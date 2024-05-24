@@ -32,6 +32,7 @@ with lib.plusultra;
       appimage-run = enabled;
       bottom = enabled;
       direnv = enabled;
+      doas = enabled;
       git = enabled;
       http = enabled;
       neovim = enabled;
