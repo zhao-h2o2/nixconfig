@@ -29,6 +29,7 @@ with lib.plusultra;
     };
 
     cli-apps = {
+      direnv = enabled;
       git = enabled;
       http = enabled;
       neovim = enabled;
