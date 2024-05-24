@@ -55,6 +55,10 @@ with lib.plusultra;
       };
       gtk = enabled;
     };
+
+    apps = {
+      netease-music = enabled;
+    };
   };
 
   # Enable the X11 windowing system.
