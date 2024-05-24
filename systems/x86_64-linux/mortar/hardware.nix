@@ -20,7 +20,7 @@
 
   fileSystems."/" =
     { device = "/dev/disk/by-label/nixos";
-      fsType = "ext4";
+      fsType = "btrfs";
     };
 
   fileSystems."/boot" =
@@ -51,7 +51,7 @@
   # Enable DHCP on the wireless link
   networking = {
     # Derived from `head -c 8 /etc/machine-id`
-    hostId = "1cad7839";
+    hostId = "671b14e9";
 
     useDHCP = lib.mkDefault true;
     # networking.interfaces.wlp0s20f3.useDHCP = true;
