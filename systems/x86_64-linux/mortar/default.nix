@@ -29,6 +29,7 @@ with lib.plusultra;
     };
 
     cli-apps = {
+      bottom = enabled;
       direnv = enabled;
       git = enabled;
       http = enabled;
