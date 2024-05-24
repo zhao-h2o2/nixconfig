@@ -29,6 +29,7 @@ with lib.plusultra;
     };
 
     cli-apps = {
+      appimage-run = enabled;
       bottom = enabled;
       direnv = enabled;
       git = enabled;
