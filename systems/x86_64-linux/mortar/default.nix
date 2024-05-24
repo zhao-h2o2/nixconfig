@@ -30,6 +30,7 @@ with lib.plusultra;
 
     cli-apps = {
       git = enabled;
+      http = enabled;
       neovim = enabled;
       proxy = enabled;
       yazi = enabled;
@@ -71,8 +72,6 @@ with lib.plusultra;
     neovim
     gcc
     clash-meta
-    wget
-    curl
   ];
 
   system.stateVersion = "23.11";
