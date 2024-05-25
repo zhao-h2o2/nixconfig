@@ -17,6 +17,5 @@ in {
   config =
     mkIf cfg.enable {
       environment.systemPackages = with pkgs; [wget curl];
-      ${namespace}.home.configFile."wgetrc".text = "";
     };
 }
