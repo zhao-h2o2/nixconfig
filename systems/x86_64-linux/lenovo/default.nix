@@ -24,6 +24,10 @@ with lib.plusultra;
       storage = enabled;
     };
 
+    services = {
+      openssh = enabled;
+    };
+
     cli-apps = {
       appimage-run = enabled;
       bottom = enabled;

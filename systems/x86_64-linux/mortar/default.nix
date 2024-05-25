@@ -25,6 +25,7 @@ with lib.plusultra;
     };
 
     services = {
+      openssh = enabled;
       syncthing = enabled;
     };
 
