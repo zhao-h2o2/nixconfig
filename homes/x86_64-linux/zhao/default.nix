@@ -15,5 +15,8 @@ with lib.${namespace}; {
       fastfetch = enabled;
       yazi = enabled;
     };
+    apps = {
+      wezterm = enabled;
+    };
   };
 }
