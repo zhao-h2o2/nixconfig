@@ -13,6 +13,7 @@ with lib.${namespace}; {
       direnv = enabled;
       git = enabled;
       fastfetch = enabled;
+      yazi = enabled;
     };
   };
 }

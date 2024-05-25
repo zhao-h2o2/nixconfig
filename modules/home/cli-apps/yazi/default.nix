@@ -14,8 +14,11 @@ in {
   };
 
   config = mkIf cfg.enable {
-    environment.systemPackages = with pkgs; [
-      yazi
-    ];
+    xdg.configFile."yazi".source = ./yazi;
+
+    programs.yazi = {
+      enable = true;
+      enableZshIntegration = true;
+    };
   };
 }
