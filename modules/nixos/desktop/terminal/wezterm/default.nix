@@ -14,7 +14,5 @@ in
       enable = true;
       pkg = pkgs.wezterm;
     };
-
-    plusultra.home.configFile."wezterm".source = ./wezterm;
   };
 }

@@ -26,18 +26,17 @@ with lib.plusultra;
 
     services = {
       openssh = enabled;
+      clash = enabled;
     };
 
     cli-apps = {
       appimage-run = enabled;
       bottom = enabled;
-      direnv = enabled;
       doas = enabled;
-      fastfetch = enabled;
       git = enabled;
       http = enabled;
       neovim = enabled;
-      proxy = enabled;
+      proxychains = enabled;
       yazi = enabled;
     };
 
@@ -59,7 +58,6 @@ with lib.plusultra;
       filemanager = {
         nautilus = enabled;
       };
-      gtk = enabled;
     };
   };
 
