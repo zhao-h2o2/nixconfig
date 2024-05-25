@@ -42,7 +42,7 @@ with lib.plusultra;
 
     desktop = {
       terminal = {
-        kitty = enabled;
+        wezterm = enabled;
       };
       browser = {
         vivaldi = {
