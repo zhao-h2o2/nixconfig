@@ -66,6 +66,7 @@ with lib.plusultra;
     apps = {
       obsidian = enabled;
       netease-music = enabled;
+      zotero = enabled;
     };
   };
 
