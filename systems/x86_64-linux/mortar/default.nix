@@ -34,7 +34,6 @@ with lib.plusultra;
       bottom = enabled;
       direnv = enabled;
       doas = enabled;
-      fastfetch = enabled;
       git = enabled;
       http = enabled;
       neovim = enabled;

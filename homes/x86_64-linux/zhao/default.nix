@@ -8,4 +8,9 @@
   ...
 }:
 with lib.${namespace}; {
+  plusultra = {
+    cli-apps = {
+      fastfetch = enabled;
+    };
+  };
 }
