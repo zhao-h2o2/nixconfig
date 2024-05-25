@@ -19,6 +19,7 @@ with lib.${namespace}; {
       wezterm = enabled;
       # kitty = enabled;
       # foot = enabled;
+      gtk = enabled;
     };
   };
 }

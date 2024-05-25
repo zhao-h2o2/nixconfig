@@ -59,7 +59,6 @@ with lib.plusultra;
       filemanager = {
         nautilus = enabled;
       };
-      gtk = enabled;
     };
 
     apps = {

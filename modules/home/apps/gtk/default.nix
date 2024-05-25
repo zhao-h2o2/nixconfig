@@ -2,10 +2,10 @@
 
 with lib;
 with lib.plusultra;
-let cfg = config.plusultra.desktop.gtk;
+let cfg = config.plusultra.apps.gtk;
 in
 {
-  options.plusultra.desktop.gtk = with types; {
+  options.plusultra.apps.gtk = with types; {
     enable = mkBoolOpt false "Whether to customize GTK and apply themes.";
     theme = {
       name = mkOpt str "Nordic-darker"
@@ -25,29 +25,22 @@ in
   };
 
   config = mkIf cfg.enable {
-    environment.systemPackages = [
-      cfg.icon.pkg
-      pkgs.dconf
-    ];
+    gtk = {
+      enable = true;
 
-    plusultra.home.extraOptions = {
-      gtk = {
-        enable = true;
+      theme = {
+        name = cfg.theme.name;
+        package = cfg.theme.pkg;
+      };
 
-        theme = {
-          name = cfg.theme.name;
-          package = cfg.theme.pkg;
-        };
+      cursorTheme = {
+        name = cfg.cursor.name;
+        package = cfg.cursor.pkg;
+      };
 
-        cursorTheme = {
-          name = cfg.cursor.name;
-          package = cfg.cursor.pkg;
-        };
-
-        iconTheme = {
-          name = cfg.icon.name;
-          package = cfg.icon.pkg;
-        };
+      iconTheme = {
+        name = cfg.icon.name;
+        package = cfg.icon.pkg;
       };
     };
   };
