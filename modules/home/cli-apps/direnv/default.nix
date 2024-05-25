@@ -15,11 +15,9 @@ in {
   };
 
   config = mkIf cfg.enable {
-    ${namespace}.home.extraOptions = {
-      programs.direnv = {
-        enable = true;
-        nix-direnv = enabled;
-      };
+    programs.direnv = {
+      enable = true;
+      nix-direnv = enabled;
     };
   };
 }
