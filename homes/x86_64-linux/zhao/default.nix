@@ -17,7 +17,8 @@ with lib.${namespace}; {
     };
     apps = {
       wezterm = enabled;
-      kitty = enabled;
+      # kitty = enabled;
+      # foot = enabled;
     };
   };
 }
