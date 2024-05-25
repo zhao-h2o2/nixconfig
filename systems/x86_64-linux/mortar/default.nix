@@ -27,6 +27,7 @@ with lib.plusultra;
     services = {
       openssh = enabled;
       syncthing = enabled;
+      clash = enabled;
     };
 
     cli-apps = {
@@ -36,7 +37,7 @@ with lib.plusultra;
       git = enabled;
       http = enabled;
       neovim = enabled;
-      proxy = enabled;
+      proxychains = enabled;
       yazi = enabled;
     };
 
