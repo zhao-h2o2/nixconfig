@@ -20,5 +20,9 @@ in {
       enable = true;
       enableZshIntegration = true;
     };
+
+    programs.starship = {
+      enable = true;
+    };
   };
 }
