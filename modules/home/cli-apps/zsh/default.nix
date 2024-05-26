@@ -16,6 +16,15 @@ in {
   config = mkIf cfg.enable {
     programs.zsh = {
       enable = true;
+
+      antidote = {
+        enable = true;
+        plugins = [
+          "zsh-users/zsh-autosuggestions"
+          "zdharma-continuum/fast-syntax-highlighting kind:defer"
+          "zsh-users/zsh-history-substring-search"
+        ];
+      };
     };
   };
 }
