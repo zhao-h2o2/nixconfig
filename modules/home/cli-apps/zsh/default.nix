@@ -17,14 +17,24 @@ in {
     programs.zsh = {
       enable = true;
 
+      initExtraFirst = ''
+        AUTOCD=1
+      '';
+
       antidote = {
         enable = true;
         plugins = [
           "zsh-users/zsh-autosuggestions"
           "zdharma-continuum/fast-syntax-highlighting kind:defer"
           "zsh-users/zsh-history-substring-search"
+          "z-shell/zsh-eza"
         ];
       };
+    };
+
+    programs.eza = {
+      enable = true;
+      icons = true;
     };
   };
 }
