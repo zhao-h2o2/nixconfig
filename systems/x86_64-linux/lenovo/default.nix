@@ -37,6 +37,7 @@ with lib.plusultra;
       http = enabled;
       neovim = enabled;
       proxychains = enabled;
+      search = enabled;
       yazi = enabled;
     };
 
