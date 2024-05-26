@@ -28,6 +28,9 @@ in {
           "zdharma-continuum/fast-syntax-highlighting kind:defer"
           "zsh-users/zsh-history-substring-search"
           "z-shell/zsh-eza"
+          "Aloxaf/fzf-tab"
+          # ^R history ^T search files
+          "zap-zsh/fzf"
         ];
       };
     };
