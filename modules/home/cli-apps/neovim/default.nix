@@ -23,5 +23,7 @@ in {
       withNodeJs = true;
       withRuby = true;
     };
+
+    plusultra.cli-apps.neovim.lazyvim = enabled;
   };
 }
