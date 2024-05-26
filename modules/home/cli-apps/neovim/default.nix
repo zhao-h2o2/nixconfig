@@ -14,6 +14,10 @@ in {
   };
 
   config = mkIf cfg.enable {
+    home.shellAliases = {
+      e = "nvim";
+    };
+
     programs.neovim = {
       enable = true;
       viAlias = true;

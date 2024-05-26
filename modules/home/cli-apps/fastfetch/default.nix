@@ -18,6 +18,10 @@ in {
       fastfetch
     ];
 
+    home.shellAliases = {
+      s = "fastfetch";
+    };
+
     xdg.configFile = {
       "fastfetch/config.jsonc".source = ./config.jsonc;
       "fastfetch/ussr.png".source = ./ussr.png;

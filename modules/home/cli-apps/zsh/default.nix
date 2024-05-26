@@ -31,6 +31,7 @@ in {
           "Aloxaf/fzf-tab"
           # ^R history ^T search files
           "zap-zsh/fzf"
+          "MichaelAquilina/zsh-you-should-use"
         ];
       };
     };
