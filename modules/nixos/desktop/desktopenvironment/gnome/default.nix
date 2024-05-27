@@ -25,9 +25,6 @@ with lib.${namespace}; let
     top-bar-organizer
     wireless-hid
   ];
-
-  default-attrs = mapAttrs (key: mkDefault);
-  nested-default-attrs = mapAttrs (key: default-attrs);
 in {
   options.${namespace}.desktop.desktopenvironment.gnome = with types; {
     enable =

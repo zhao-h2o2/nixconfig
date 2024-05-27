@@ -24,6 +24,7 @@ with lib.${namespace}; {
       # foot = enabled;
       gtk = enabled;
       rime = enabled;
+      gnome = enabled;
     };
   };
 }
