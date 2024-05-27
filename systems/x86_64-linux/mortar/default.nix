@@ -42,6 +42,7 @@ with lib.plusultra;
       proxychains = enabled;
       search = enabled;
       yazi = enabled;
+      zsh = enabled;
     };
 
     desktop = {

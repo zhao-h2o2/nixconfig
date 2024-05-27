@@ -11,7 +11,6 @@ with lib.${namespace}; {
   plusultra = {
     cli-apps = {
       alias = enabled;
-      zsh = enabled;
       neovim = enabled;
     };
     apps = {
