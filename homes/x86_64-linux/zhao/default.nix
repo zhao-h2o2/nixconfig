@@ -23,6 +23,7 @@ with lib.${namespace}; {
       # kitty = enabled;
       # foot = enabled;
       gtk = enabled;
+      rime = enabled;
     };
   };
 }

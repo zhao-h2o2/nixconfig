@@ -16,6 +16,7 @@ in
         fcitx5-mozc
         fcitx5-gtk
         fcitx5-rime
+        fcitx5-nord
       ];
     };
   };
