@@ -44,6 +44,7 @@ with lib.plusultra;
 
     desktop = {
       displaymanager.gdm = enabled;
+      desktopenvironment.gnome = enabled;
       terminal = {
         wezterm = enabled;
       };
