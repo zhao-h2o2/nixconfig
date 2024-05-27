@@ -17,5 +17,6 @@ in {
   config =
     mkIf cfg.enable {
       environment.systemPackages = with pkgs; [wget curl];
+      plusultra.home.configFile."wgetrc".text = "";
     };
 }
