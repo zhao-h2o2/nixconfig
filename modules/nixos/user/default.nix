@@ -83,5 +83,13 @@ in {
         extraGroups = [] ++ cfg.extraGroups;
       }
       // cfg.extraOptions;
+
+      # Icon
+      #script_name = "set_icon_${cfg.name}";
+      system.userActivationScripts.set_icon.text = ''
+        if [[ ! -f "''$HOME/.face" ]]; then
+          ln -s "${propagatedIcon}/share/plusultra-icons/user/${cfg.name}/${cfg.icon.fileName}" "''$HOME/.face"
+        fi
+      '';
   };
 }
