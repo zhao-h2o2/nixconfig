@@ -13,7 +13,6 @@ with lib.${namespace}; {
       alias = enabled;
       zsh = enabled;
       neovim = enabled;
-      direnv = enabled;
     };
     apps = {
       wezterm = enabled;

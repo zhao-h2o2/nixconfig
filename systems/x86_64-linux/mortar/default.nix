@@ -33,6 +33,7 @@ with lib.plusultra;
     cli-apps = {
       appimage-run = enabled;
       bottom = enabled;
+      direnv = enabled;
       doas = enabled;
       fastfetch = enabled;
       git = enabled;
