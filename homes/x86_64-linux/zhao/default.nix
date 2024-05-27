@@ -12,7 +12,6 @@ with lib.${namespace}; {
     apps = {
       wezterm = enabled;
       # kitty = enabled;
-      # foot = enabled;
       gtk = enabled;
       rime = enabled;
       gnome = enabled;
