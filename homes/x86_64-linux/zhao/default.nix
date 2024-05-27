@@ -14,7 +14,6 @@ with lib.${namespace}; {
       zsh = enabled;
       neovim = enabled;
       direnv = enabled;
-      git = enabled;
       yazi = enabled;
     };
     apps = {

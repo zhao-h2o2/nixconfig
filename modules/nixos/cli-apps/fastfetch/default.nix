@@ -18,13 +18,13 @@ in {
       fastfetch
     ];
 
-    ${namespace}.home.extraOptions = {
+    plusultra.home.extraOptions = {
       home.shellAliases = {
         s = "fastfetch";
       };
     };
 
-    ${namespace}.home.configFile = {
+    plusultra.home.configFile = {
       "fastfetch/config.jsonc".source = ./config.jsonc;
       "fastfetch/ussr.png".source = ./ussr.png;
     };
