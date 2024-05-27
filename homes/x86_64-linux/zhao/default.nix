@@ -15,7 +15,6 @@ with lib.${namespace}; {
       neovim = enabled;
       direnv = enabled;
       git = enabled;
-      fastfetch = enabled;
       yazi = enabled;
     };
     apps = {
