@@ -17,5 +17,20 @@ in {
     environment.systemPackages = with pkgs; [
       yazi
     ];
+
+    plusultra.home = {
+      configFile."yazi".source = ./yazi;
+
+      extraOptions = {
+        programs.yazi = {
+          enable = true;
+          enableZshIntegration = true;
+        };
+
+        programs.starship = {
+          enable = true;
+        };
+      };
+    };
   };
 }
