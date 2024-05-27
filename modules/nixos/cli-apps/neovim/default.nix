@@ -24,5 +24,23 @@ in {
       NPM_CONFIG_PREFIX = "$HOME/.npm-global";
       EDITOR = "nvim";
     };
+
+    plusultra.home.extraOptions = {
+      home.shellAliases = {
+        e = "nvim";
+      };
+
+      programs.neovim = {
+        enable = true;
+        viAlias = true;
+        vimAlias = true;
+        vimdiffAlias = true;
+        withPython3 = true;
+        withNodeJs = true;
+        withRuby = true;
+      };
+    };
+
+    plusultra.cli-apps.neovim.lazyvim = enabled;
   };
 }

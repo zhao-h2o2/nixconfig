@@ -110,65 +110,67 @@ in {
       }
     ];
 
-    programs.neovim = {
-      extraPackages = with pkgs; [
-        # clipboard
-        xclip
+    plusultra.home.extraOptions = {
+      programs.neovim = {
+        extraPackages = with pkgs; [
+          # clipboard
+          xclip
 
-        # lazyvim
-        lua-language-server
-        stylua
+          # lazyvim
+          lua-language-server
+          stylua
 
-        # telescope
-        ripgrep
-      ];
+          # telescope
+          ripgrep
+        ];
 
-      plugins = with pkgs.vimPlugins; [ lazy-nvim ];
+        plugins = with pkgs.vimPlugins; [ lazy-nvim ];
 
-      extraLuaConfig =
-        let
-          mkEntryFromDrv =
-            drv:
-            if lib.isDerivation drv then
-              {
-                name = "${lib.getName drv}";
-                path = drv;
-              }
-            else
-              drv;
-          lazyPath = pkgs.linkFarm "lazy-plugins" (
-            builtins.map mkEntryFromDrv (lib.subtractLists cfg.removedPlugins cfg.plugins ++ cfg.extraPlugins)
-          );
-        in
-        ''
-          require("lazy").setup({
-            defaults = {
-              lazy = true,
-            },
-            dev = {
-              path = "${lazyPath}",
-              patterns = { "." },
-              fallback = true,
-            },
-            spec = {
-              { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-              -- The following configs are needed for fixing lazyvim on nix
-              -- force enable telescope-fzf-native.nvim
-              { "nvim-telescope/telescope-fzf-native.nvim", enabled = true },
-              -- disable mason.nvim, use programs.neovim.extraPackages
-              { "williamboman/mason-lspconfig.nvim", enabled = false },
-              { "williamboman/mason.nvim", enabled = false },
-              -- import/override with your plugins
-              { import = "plugins" },
-              -- treesitter handled by my.neovim.treesitterParsers, put this line at the end of spec to clear ensure_installed
-              { "nvim-treesitter/nvim-treesitter", opts = { ensure_installed = {} } },
-          ${cfg.extraSpec}  },
-          })
-        '';
+        extraLuaConfig =
+          let
+            mkEntryFromDrv =
+              drv:
+              if lib.isDerivation drv then
+                {
+                  name = "${lib.getName drv}";
+                  path = drv;
+                }
+              else
+                drv;
+            lazyPath = pkgs.linkFarm "lazy-plugins" (
+              builtins.map mkEntryFromDrv (lib.subtractLists cfg.removedPlugins cfg.plugins ++ cfg.extraPlugins)
+            );
+          in
+          ''
+            require("lazy").setup({
+              defaults = {
+                lazy = true,
+              },
+              dev = {
+                path = "${lazyPath}",
+                patterns = { "." },
+                fallback = true,
+              },
+              spec = {
+                { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+                -- The following configs are needed for fixing lazyvim on nix
+                -- force enable telescope-fzf-native.nvim
+                { "nvim-telescope/telescope-fzf-native.nvim", enabled = true },
+                -- disable mason.nvim, use programs.neovim.extraPackages
+                { "williamboman/mason-lspconfig.nvim", enabled = false },
+                { "williamboman/mason.nvim", enabled = false },
+                -- import/override with your plugins
+                { import = "plugins" },
+                -- treesitter handled by my.neovim.treesitterParsers, put this line at the end of spec to clear ensure_installed
+                { "nvim-treesitter/nvim-treesitter", opts = { ensure_installed = {} } },
+            ${cfg.extraSpec}  },
+            })
+          '';
+      };
     };
 
     # treesitter
-    xdg.configFile."nvim/parser".source =
+    plusultra.home.configFile."nvim/parser".source =
       let
         treesitterParsers =
           (pkgs.vimPlugins.nvim-treesitter.withPlugins (

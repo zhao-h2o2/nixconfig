@@ -9,9 +9,6 @@
 }:
 with lib.${namespace}; {
   plusultra = {
-    cli-apps = {
-      neovim = enabled;
-    };
     apps = {
       wezterm = enabled;
       # kitty = enabled;
