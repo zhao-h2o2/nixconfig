@@ -10,7 +10,6 @@
 with lib.${namespace}; {
   plusultra = {
     apps = {
-      wezterm = enabled;
       gtk = enabled;
       rime = enabled;
       gnome = enabled;
