@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "bibata-cursors": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1673748590,
+        "narHash": "sha256-7QUz1JrRMxyOI4ovsvTBNTF5TgECbSRnkeKNk9IZEZg=",
+        "owner": "suchipi",
+        "repo": "Bibata_Cursor",
+        "rev": "ff2475240548c68b6eb59a664465be0d756222ad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "suchipi",
+        "repo": "Bibata_Cursor",
+        "type": "github"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -108,6 +124,7 @@
     },
     "root": {
       "inputs": {
+        "bibata-cursors": "bibata-cursors",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "rime-ice": "rime-ice",
