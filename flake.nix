@@ -16,6 +16,11 @@
     snowfall-lib.url = "github:snowfallorg/lib/dev";
     snowfall-lib.inputs.nixpkgs.follows = "nixpkgs";
 
+    bibata-cursors = {
+      url = "github:suchipi/Bibata_Cursor";
+      flake = false;
+    };
+
     # rime-ice
     rime-ice = {
       url = "github:iDvel/rime-ice";

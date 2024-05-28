@@ -15,9 +15,15 @@ in {
   };
 
   config = mkIf cfg.enable {
-    programs.direnv = {
-      enable = true;
-      nix-direnv = enabled;
+    environment.systemPackages = with pkgs; [
+      direnv
+    ];
+
+    plusultra.home.extraOptions = {
+      programs.direnv = {
+        enable = true;
+        nix-direnv = enabled;
+      };
     };
   };
 }

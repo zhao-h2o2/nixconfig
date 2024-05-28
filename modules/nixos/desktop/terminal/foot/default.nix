@@ -14,5 +14,7 @@ in
       enable = true;
       pkg = pkgs.foot;
     };
+
+    plusultra.home.configFile."foot/foot.ini".source = ./foot.ini;
   };
 }

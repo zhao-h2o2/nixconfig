@@ -33,13 +33,16 @@ with lib.plusultra;
     cli-apps = {
       appimage-run = enabled;
       bottom = enabled;
+      direnv = enabled;
       doas = enabled;
+      fastfetch = enabled;
       git = enabled;
       http = enabled;
       neovim = enabled;
       proxychains = enabled;
       search = enabled;
       yazi = enabled;
+      zsh = enabled;
     };
 
     desktop = {
@@ -62,6 +65,7 @@ with lib.plusultra;
       filemanager = {
         nautilus = enabled;
       };
+      gtk = enabled;
     };
 
     apps = {

@@ -14,15 +14,17 @@ in {
   };
 
   config = mkIf cfg.enable {
-    home.packages = with pkgs; [
+    environment.systemPackages = with pkgs; [
       fastfetch
     ];
 
-    home.shellAliases = {
-      s = "fastfetch";
+    plusultra.home.extraOptions = {
+      home.shellAliases = {
+        s = "fastfetch";
+      };
     };
 
-    xdg.configFile = {
+    plusultra.home.configFile = {
       "fastfetch/config.jsonc".source = ./config.jsonc;
       "fastfetch/ussr.png".source = ./ussr.png;
     };

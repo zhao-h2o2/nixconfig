@@ -14,5 +14,10 @@ in
       enable = true;
       pkg = pkgs.kitty;
     };
+
+    plusultra.home.configFile = {
+      "kitty/kitty.conf".source = ./kitty.conf;
+      "kitty/scheme.conf".source = ./nord.conf;
+    };
   };
 }
