@@ -9,8 +9,5 @@
 }:
 with lib.${namespace}; {
   plusultra = {
-    apps = {
-      gnome = enabled;
-    };
   };
 }
